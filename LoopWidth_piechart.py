@@ -22,7 +22,9 @@ def parse_bins(bin_string):
         user_labels.append(split_bins[x])
     # convert to basepairs for Mb and Kb
     bin_string = bin_string.replace("Mb", "000000")
+    bin_string = bin_string.replace("mb", "000000")
     bin_string = bin_string.replace("Kb", "000")
+    bin_string = bin_string.replace("kb", "000")
     # list that contains the different numeric bins
     numeric_bins = bin_string.split(',')
     # return the labels and the bins reformatted as numbers
@@ -192,8 +194,7 @@ def main():
                                                                  " MUST have a '<' symbol in front, and the last bin must "
                                                                  "include a '+' at the end. Ranges must be separated by '-'."
                                                                  "Lengths may be in basepair format (10000) or Kb/Mb format"
-                                                                 "(10Kb). If in Kb or Mb format, only use 'Kb' or 'Mb' "
-                                                                 "*case sensitive* ")
+                                                                 "(10Kb).")
     parser.add_argument('--output', type=str, required=True,
                         help="REQUIRED: Path for output piechart. Only in matplotlib accepted picture format.' ")
     # Parse the argument
