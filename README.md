@@ -31,4 +31,26 @@ python LoopWidth_piechart.py  --loop Examples/test_loop_file.bedpe --bins 1Mb,1M
 ```{bash echo=FALSE}
 python LoopWidth_piechart.py  --loop Examples/test_loop_file.bedpe --res 100000 --output Examples/piechart_res_example.png
 ```
+## LoopWidth_violinplot
+Creates a violin plot and outputs the log2(width) mean and median for bedpe file(s).
+
+### Requirements
+- pandas
+- matplotlib
+- python >=  3.7 
+- seaborn
+- statistics
+
+###  Usage
+
+```{bash echo=FALSE}
+python LoopWidth_violinplot.py --loop <bedpe file(s)> --labels <plot label(s)> --output <path to violinplot output>
+
+```
+### Parameters
+- --loop: **REQUIRED** loop file(s) in bedpe format (see [bedtools documentation](https://bedtools.readthedocs.io/en/latest/content/general-usage.html) for more information), with a header row. If multiple loop files are to be plotted on the same plot, enter loop file paths separated by commas. 
+- --labels: **REQUIRED** labels for violin plot(s) corresponding to the order given in the `loop` parameter. If multiple, separate with commas. 
+- output: **REQUIRED** file path to outputted violin plot in any matplot lib accepted format (see [matplotlib picture formats](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html) for more info)
+
+
 
