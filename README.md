@@ -59,8 +59,11 @@ python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe,Examples/tes
   Output: 
     
    Mean Log2(width) for  Examples/test_loop_file.bedpe is:  21.782055367961732
+   
    Median Log2(width) for  Examples/test_loop_file.bedpe is:  22.05248866110651
+   
    Mean Log2(width) for  Examples/test_loop_file2.bedpe is:  22.51408577126218
+   
    Median Log2(width) for  Examples/test_loop_file2.bedpe is:  22.620867729860066
 
 
@@ -71,6 +74,7 @@ python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe --labels tes
  Output:
     
    Mean Log2(width) for  Examples/test_loop_file.bedpe is:  21.782055367961732
+   
    Median Log2(width) for  Examples/test_loop_file.bedpe is:  22.05248866110651
     
 
