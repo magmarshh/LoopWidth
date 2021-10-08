@@ -24,4 +24,11 @@ python LoopWidth_piechart.py  --loop <bedpe file> --bins <user-defined bin width
 **NOTE: Either bins or res argument MUST be supplied, if both are supplied then the res argument will take precedence.**
 
 
+### Examples: 
+```{bash echo=FALSE}
+python LoopWidth_piechart.py  --loop Examples/test_loop_file.bedpe --bins 1Mb,1Mb-3Mb,3Mb-6Mb,6Mb+ --output Examples/piechart_bins_example.png
+```
+```{bash echo=FALSE}
+python LoopWidth_piechart.py  --loop Examples/test_loop_file.bedpe --res 100000 --output Examples/piechart_res_example.png
+```
 
