@@ -21,7 +21,7 @@ python LoopWidth_piechart.py  --loop <bedpe file> --bins <user-defined bin width
 -  --res: **OPTIONAL** integer input of loop file resolution. Must be 10000, 25000, 50000, or 100000. Pre-defined bins according to the resolution will be used, if different bins are preferred use the `--bins` argument. 
 -  --output: **REQUIRED** file path to outputted piechart in any matplot lib accepted format (see [matplotlib picture formats](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html) for more info)
 
-**NOTE: Either bins or res argument MUST be supplied, if both are supplied then the res argument will take precedence.**
+**NOTE: Either `--bins` or `--res` argument MUST be supplied, if both are supplied then the res argument will take precedence.**
 
 
 ### Examples: 
