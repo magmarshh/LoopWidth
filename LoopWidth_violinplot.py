@@ -11,6 +11,7 @@ import argparse
 from math import log2
 import statistics
 import matplotlib.pyplot as plt
+from scipy.stats import mannwhitneyu
 
 '''
 Function to parse the loop dataframe and obtain all of the loop widths 

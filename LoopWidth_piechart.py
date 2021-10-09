@@ -227,7 +227,7 @@ def main():
         # now we can plot using the width_counts and labels
         ### Plot
         plt.pie(width_counts, autopct='%1.1f%%',
-                shadow=True, startangle=90)
+                shadow=False, startangle=90)
         plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
         plt.legend(labels)
         plt.savefig(args.output)
