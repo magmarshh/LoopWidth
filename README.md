@@ -50,7 +50,9 @@ python LoopWidth_violinplot.py --loop <bedpe file(s)> --labels <plot label(s)> -
 ### Parameters
 - --loop: **REQUIRED** loop file(s) in bedpe format (see [bedtools documentation](https://bedtools.readthedocs.io/en/latest/content/general-usage.html) for more information), with a header row. If multiple loop files are to be plotted on the same plot, enter loop file paths separated by commas. 
 - --labels: **REQUIRED** labels for violin plot(s) corresponding to the order given in the `loop` parameter. If multiple, separate with commas. 
-- output: **REQUIRED** file path to outputted violin plot in any matplot lib accepted format (see [matplotlib picture formats](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html) for more info)
+- --output: **REQUIRED** file path to outputted violin plot in any matplot lib accepted format (see [matplotlib picture formats](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html) for more info)
+- --figWidth: **OPTIONAL** figure width in integer format. Default is 7. 
+- --figHeight: **OPTIONAL** figure height in integer format. Default is 7. 
 
 ### Examples: 
 ```{bash echo=FALSE}
@@ -68,7 +70,7 @@ python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe,Examples/tes
 
 
 ```{bash echo=FALSE}
-python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe --labels test1 --output Examples/violin_plot_one_file_example.png 
+python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe --labels test1 --output Examples/violin_plot_one_file_example.png --figWidth 6 --figHeight 4
 ```
  
  Output:
