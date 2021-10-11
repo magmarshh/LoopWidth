@@ -44,7 +44,7 @@ Creates a violin plot and outputs the log2(width) mean and median for bedpe file
 ###  Usage
 
 ```{bash echo=FALSE}
-python LoopWidth_violinplot.py --loop <bedpe file(s)> --labels <plot label(s)> --output <path to violinplot output>
+python LoopWidth_violinplot.py --loop <bedpe file(s)> --labels <plot label(s)> --figWidth <figure width> --figHeight <figure height> --output <path to violinplot output>
 
 ```
 ### Parameters
