@@ -59,7 +59,7 @@ python LoopWidth_violinplot.py --loop <bedpe file(s)> --labels <plot label(s)> -
 python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe,Examples/test_loop_file2.bedpe --labels test1,test2 --output Examples/violin_plot_multiple_files_example.png
 ```
 
-  **Output:**
+  #### Output:
     
    Mean Log2(width) for  Examples/test_loop_file.bedpe is:  21.782055367961732
    
@@ -73,7 +73,7 @@ python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe,Examples/tes
 python LoopWidth_violinplot.py --loop Examples/test_loop_file.bedpe --labels test1 --output Examples/violin_plot_one_file_example.png --figWidth 6 --figHeight 4
 ```
  
- **Output:**
+ #### Output:
     
    Mean Log2(width) for  Examples/test_loop_file.bedpe is:  21.782055367961732
    
