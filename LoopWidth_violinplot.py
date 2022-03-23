@@ -13,6 +13,9 @@ import statistics
 import matplotlib.pyplot as plt
 from scipy.stats import mannwhitneyu
 
+# hide gridlines 
+plt.grid(b=None)
+
 '''
 Function to parse the loop dataframe and obtain all of the loop widths 
 to be plotted in a violin plot
