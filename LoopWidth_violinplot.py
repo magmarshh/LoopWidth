@@ -13,8 +13,7 @@ import statistics
 import matplotlib.pyplot as plt
 from scipy.stats import mannwhitneyu
 
-# hide gridlines 
-plt.grid(False)
+
 
 '''
 Function to parse the loop dataframe and obtain all of the loop widths 
@@ -82,7 +81,6 @@ def main():
             print(" Median Log2(width) for ", file, "is: ", statistics.median(plotting_loop_widths))
             # append the list of loop_widths onto the combined_data_to_plot list for plotting
             combined_data_to_plot.append(plotting_loop_widths)
-        sns.set()
         if args.figWidth is not None:
             if args.figHeight is not None:
                 fig, axes = plt.subplots(figsize=(args.figWidth, args.figHeight))
@@ -93,16 +91,17 @@ def main():
                 fig, axes = plt.subplots(figsize=(7, args.figHeight))
         else:
             fig, axes = plt.subplots(figsize=(7, 7))
-        sns.set(style="whitegrid")
         # get list for axes
         axis_ticks = list(range(1, len(files) + 1))
         # set the x axis ticks
         axes.set_xticks(axis_ticks)
         axes.set_ylabel('log2(Loop Width)')
+        sns.set()
+        sns.set(style="ticks")
         ax = sns.violinplot(data=combined_data_to_plot, ax=axes, orient='v', inner='box')
         # set the x axis tick labels
         ax.set_xticklabels(labels_split)
-        ax.set_facecolor('white') # get rid of background
+        sns.set(style="ticks")
         # Save figure
         fig.savefig(args.output)
 
