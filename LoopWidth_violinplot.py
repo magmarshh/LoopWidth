@@ -102,6 +102,7 @@ def main():
         ax = sns.violinplot(data=combined_data_to_plot, ax=axes, orient='v', inner='box')
         # set the x axis tick labels
         ax.set_xticklabels(labels_split)
+        ax.set_facecolor('white') # get rid of background
         # Save figure
         fig.savefig(args.output)
 
