@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import mannwhitneyu
 
 # hide gridlines 
-plt.grid(b=None)
+plt.grid(False)
 
 '''
 Function to parse the loop dataframe and obtain all of the loop widths 
