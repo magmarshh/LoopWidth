@@ -13,7 +13,7 @@ import statistics
 import matplotlib.pyplot as plt
 from scipy.stats import mannwhitneyu
 
-
+plt.rc("font", size = 15)
 
 '''
 Function to parse the loop dataframe and obtain all of the loop widths 
